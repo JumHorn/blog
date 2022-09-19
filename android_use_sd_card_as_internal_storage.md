@@ -81,6 +81,7 @@ pm uninstall --user 0 com.baidu.netdisk.tv # 删除对应应用
 adb install name.apk
 adb -f install name.apk # 安装到内部存储
 adb -s install name.apk # 安装到sd卡，未root的设备，只能先安装到内部存储，再移动到sd卡
+adb -r install name.apk # 覆盖旧版本apk
 ```
 
 4. 如何知道sm/pm如此好用的命令还有什么功能
