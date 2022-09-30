@@ -30,7 +30,17 @@ audio.play();
 
 # 下载视频
 
-## 以acfun作为例子
+	目前可行的通用方法是F12后把device改成手机，那么url就是直接的地址，通过web端，则要对付blob url，比较麻烦
+## 通用工具
+	you-get
+```shell
+pip3 install you-get
+```
+```shell
+you-get url
+```
+
+## m3u8格式
 1. 使用ffmpeg下载网络视频流
 ```shell
 ffmpeg -i 'https://url/to/some/file.m3u8' -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 file.mp4
