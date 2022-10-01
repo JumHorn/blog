@@ -1,6 +1,8 @@
 # 用浏览器直接下载视频和音频
 
-	使用简单的debug知识和少量的javascript
+	学会这项技能的学习资料不是javascript，不是chrome debug
+	而是http协议
+> https://developer.mozilla.org/zh-CN/docs/Web/HTTP
 
 # 下载音频
 
@@ -84,4 +86,19 @@ python3 -m http.server
 2. m4s文件的请求大小是可以在request里面的请求头里的Range来指定的
 3. 随便在浏览器的network标签页，找到一段请求，右键copy as cURL
 4. 复制到终端，将请求头range范围改为 Range : bytes=0-
+5. 即可下载全部视频
+
+# ok.ru特殊案例
+
+	这是一个俄罗斯视频网站，当然you-get并不支持，这时候稍微懂点原理就可以了，用工具就没有办法处理了
+
+## 如何下载视频
+
+	该站点的视频不是m3u8,m4s不能用上述方法下载
+	chrome浏览器不是很方便，所以我使用了firefox浏览器
+
+1. F12打开调试页面，跳转到network标签页
+2. 文件类型限制在mp4
+3. 找到对应的url，右键copy as cURL
+4. 复制到终端，将请求头的url参数中的byte修改为byte=0-
 5. 即可下载全部视频
