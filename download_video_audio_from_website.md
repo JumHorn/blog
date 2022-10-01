@@ -102,3 +102,26 @@ python3 -m http.server
 3. 找到对应的url，右键copy as cURL
 4. 复制到终端，将请求头的url参数中的byte修改为byte=0-
 5. 即可下载全部视频
+
+# 腾讯视频特殊案例
+	目前为止没有找到ts列表文件，但是可以修改一下一下ts连接就可以下载视频了
+
+```shell
+# 同样是copy as cURL
+curl 'https://apd-57f4494d985cc00f108799dd4a3fef79.v.smtcdns.com/omts.tc.qq.com/A5E8V4VTbUob0LX4ZImK8VDax9Jb_1lSjw6BPANC5ZWY/uwMROfz2r57EIaQXGdGnCmdXOm4dUzLhQtEEQ6Okjkxelnng/svp_50069/rp_FjxDFmuOQWEgoJlpurDZoJQbVZjFsrjcSpZ8x1JZEYZDNjgHAirUmxkS6wrHH2qa2Vx_knt8Cz2Gae7nYlcH7fETsAKvRLBOg5DNmHXukW7hpEJU4p3wGJO_qfifKl_W6RErWvFwL_73tKIEyDbumcp9un6OJq_y5DtPNJcI/05_gzc_1000035_0bc3m4ahuaaawaaeeuvh5nrjkz6dpjtqa6sa.f304110.1.ts?index=5&start=58480&end=69560&brs=12259856&bre=14321463&ver=4&token=7211365c5f14a5d12a8dfd20a1b545ad' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0' -H 'Accept: */*' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br' -H 'Origin: https://v.qq.com' -H 'Connection: keep-alive' -H 'Referer: https://v.qq.com/' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: cross-site'
+```
+
+	修改为
+```shell
+curl 'https://apd-57f4494d985cc00f108799dd4a3fef79.v.smtcdns.com/omts.tc.qq.com/A5E8V4VTbUob0LX4ZImK8VDax9Jb_1lSjw6BPANC5ZWY/uwMROfz2r57EIaQXGdGnCmdXOm4dUzLhQtEEQ6Okjkxelnng/svp_50069/rp_FjxDFmuOQWEgoJlpurDZoJQbVZjFsrjcSpZ8x1JZEYZDNjgHAirUmxkS6wrHH2qa2Vx_knt8Cz2Gae7nYlcH7fETsAKvRLBOg5DNmHXukW7hpEJU4p3wGJO_qfifKl_W6RErWvFwL_73tKIEyDbumcp9un6OJq_y5DtPNJcI/05_gzc_1000035_0bc3m4ahuaaawaaeeuvh5nrjkz6dpjtqa6sa.f304110.1.ts?token=7211365c5f14a5d12a8dfd20a1b545ad' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0' -H 'Accept: */*' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br' -H 'Origin: https://v.qq.com' -H 'Connection: keep-alive' -H 'Referer: https://v.qq.com/' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: cross-site' --output file.ts
+```
+
+	可以用file命令查看文件类型
+```shell
+file file.ts
+```
+
+	该文件还不能直接播放,用ffmpeg修改一下格式即可
+```shell
+ffmpeg -i file.ts -c:v libx264 file.mp4
+```
