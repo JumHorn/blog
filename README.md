@@ -3,7 +3,11 @@ just for fun
 
 # ideas
 
-- [ ] 在centos上搭建vpn
+- [x] 在centos上搭建vpn
+
+- [x] 多台公网服务器组建局域网
+
+	使用vpn
 
 - [ ] 建立查找开放端口的对应IP服务
 
