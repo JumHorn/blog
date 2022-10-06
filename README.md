@@ -3,6 +3,8 @@ just for fun
 
 # ideas
 
+- [ ] 安装和使用anbox
+
 - [x] 在centos上搭建vpn
 
 - [x] 多台公网服务器组建局域网
