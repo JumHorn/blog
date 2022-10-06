@@ -61,19 +61,19 @@ python3 -m http.server
 <html>
 <title>JumHorn</title>
 
-<body>
-<video id='video' src='file.mp4' width='800' height='600'></video>
-<br/>
-<button onclick='video.paused ? video.play() : video.pause()'>Play/Pause<button>
-
 <script>
-  var video = document.getElementById('video');
-  console.log(video.height);
+	var video = document.getElementById('video');
+	console.log(video.height);
 </script>
 
-</body>
-</html>
+<body>
 
+	<video id='video' src='file.mp4' width='800' height='600'></video>
+	<br />
+	<button onclick='video.paused ? video.play() : video.pause()'>Play/Pause</button>
+</body>
+
+</html>
 ```
 
 # B站特殊案例
