@@ -17,13 +17,41 @@ dnf install tigervnc-server
 ```shell
 vncserver
 ```
+2. 允许使用剪切板
+
+	编辑$home/admin/.vnc/xstartup
+```shell
+vncconfig -nowin &
+autocutsel -fork
+```
+
+3. 默认启动不同linux桌面
+
+	编辑$home/admin/.vnc/xstartup
+```shell
+# 启动默认桌面
+/etc/X11/xinit/xinitrc
+# 启动Xfce
+startxfce4
+# 启动gnome
+dbus-launch --exit-with-session gnome-session &
+```
 
 ## 使用
+
+* Mac客户端连接
 
 	mac是不用安装客户端即可使用
 	finder -> go -> connect to server
 ```shell
 vnc://ip:5901
+```
+
+* 服务器关闭桌面环境
+```shell
+vncserver -kill :0
+# or close all
+vncserver -kill :*
 ```
 
 ## 总结
