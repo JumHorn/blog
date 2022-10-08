@@ -130,3 +130,8 @@ mail
 
 	PTR反向解析，从IP解析到域名
 	目前腾讯云支持该功能，收费1500/年，好坑，阿里云免费
+
+* gui for read /var/mail(mbox file)
+```shell
+dnf install evolution
+```
