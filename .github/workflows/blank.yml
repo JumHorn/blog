@@ -40,6 +40,6 @@ jobs:
           uptime
         
       # Runs a set of self defined commands
-      - name: Run network test script
-        run: |
-          ping -c 4 google.com
+      # - name: Run network test script
+      #   run: |
+      #     ping -c 4 google.com
