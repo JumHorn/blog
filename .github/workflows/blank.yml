@@ -38,3 +38,8 @@ jobs:
           free -h
           df -h
           uptime
+        
+      # Runs a set of self defined commands
+      - name: Run network test script
+        run: |
+          ping -c jumhorn.com
