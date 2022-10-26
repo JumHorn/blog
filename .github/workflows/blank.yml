@@ -42,4 +42,4 @@ jobs:
       # Runs a set of self defined commands
       - name: Run network test script
         run: |
-          ping -c jumhorn.com
+          ping -c 4 jumhorn.com
