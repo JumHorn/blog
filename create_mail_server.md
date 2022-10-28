@@ -121,6 +121,24 @@ mail
 & q
 ```
 
+## 邮件转发
+
+	修改/etc/mail/virtusertable文件
+	目前没有rDNS,gmail,outlook都不收，暂时用qq尝试qq邮箱还行
+	将所有邮件都转发，即使用户不存在也不影响转发
+```vim
+@jumhorn.com jumhorn@qq.com
+```
+
+	使用~/.forward文件，设置单个用户
+```shell
+cd
+echo "admin@jumhorn.com" > .forward
+chmod 644 .forward   # change permission else it won't work
+```
+
+	以上方法并不保存邮件，转发并保存邮件的方法
+
 # FAQ
 * 配置邮件尝试过于着急
 
