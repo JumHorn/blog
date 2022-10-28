@@ -138,6 +138,11 @@ chmod 644 .forward   # change permission else it won't work
 ```
 
 	以上方法并不保存邮件，转发并保存邮件的方法
+	最简单的方法是在.forward文件上加上自己,如下.forward文件
+```file
+jumhorn@gmail.com
+admin@jumhorn.com
+```
 
 # FAQ
 * 配置邮件尝试过于着急
