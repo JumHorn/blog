@@ -12,6 +12,10 @@
 
 	目前不支持免费用户
 
+## github actions
+
+[actions](github_action.md)
+
 ## replit
 
 > https://replit.com/
@@ -30,6 +34,8 @@
 > https://remotemysql.com/
 
 > https://googiehost.com/free-mysql-hosting.html
+
+	一些免费的网站host也可以提供MySQL服务，如wordpress,x10Hosting
 
 ## Redis Hosting
 
