@@ -168,6 +168,16 @@
 			"protocol": "socks",
 			"settings": {
 				"udp": true
+			},
+			"streamSettings": {
+				"network": "tcp"
+			},
+			"sniffing": {
+				"enabled": true,
+				"destOverride": [
+					"http",
+					"tls"
+				]
 			}
 		}
 	],
