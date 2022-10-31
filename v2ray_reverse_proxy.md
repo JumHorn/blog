@@ -27,17 +27,15 @@
 	"outbounds": [
 		{
 			"tag": "tunnel",
-			"protocol": "vless",
+			"protocol": "vmess",
 			"settings": {
 				"vnext": [
 					{
-						"address": "127.0.0.1",
+						"address": "jumhorn.com",
 						"port": 29091,
 						"users": [
 							{
-								"id": "897244b5-0170-44a3-9f76-672fa6734c9b",
-								"encryption": "none",
-								"level": 0
+								"id": "897244b5-0170-44a3-9f76-672fa6734c9b"
 							}
 						]
 					}
@@ -91,27 +89,45 @@
 		{
 			"tag": "interconn",
 			"port": 29090,
-			"protocol": "vless",
+			"protocol": "vmess",
 			"settings": {
 				"clients": [
 					{
 						"id": "897244b5-0170-44a3-9f76-672fa6734c9b"
 					}
-				],
-				"decryption": "none"
+				]
+			},
+			"streamSettings": {
+				"network": "tcp"
+			},
+			"sniffing": {
+				"enabled": true,
+				"destOverride": [
+					"http",
+					"tls"
+				]
 			}
 		},
 		{
 			"tag": "tunnel",
 			"port": 29091,
-			"protocol": "vless",
+			"protocol": "vmess",
 			"settings": {
 				"clients": [
 					{
 						"id": "897244b5-0170-44a3-9f76-672fa6734c9b"
 					}
-				],
-				"decryption": "none"
+				]
+			},
+			"streamSettings": {
+				"network": "tcp"
+			},
+			"sniffing": {
+				"enabled": true,
+				"destOverride": [
+					"http",
+					"tls"
+				]
 			}
 		}
 	],
@@ -157,7 +173,7 @@
 	],
 	"outbounds": [
 		{
-			"protocol": "vless",
+			"protocol": "vmess",
 			"settings": {
 				"vnext": [
 					{
@@ -165,9 +181,7 @@
 						"port": 29090,
 						"users": [
 							{
-								"id": "897244b5-0170-44a3-9f76-672fa6734c9b",
-								"encryption": "none",
-								"level": 0
+								"id": "897244b5-0170-44a3-9f76-672fa6734c9b"
 							}
 						]
 					}
