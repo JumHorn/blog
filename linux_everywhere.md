@@ -4,6 +4,12 @@
 
 	IBM教育免费服务器，支持免费用120天
 
+## [woiden](https://woiden.id/)
+
+	云主机使用telegram注册，可以使用7天，可以持续续期.
+	共享公网IP的NAT VPS，可以使用反向代理
+	[登录IPv6](https://ssh.hax.co.id/)
+
 # 云shell
 	分享各种提供linux shell的云服务
 
