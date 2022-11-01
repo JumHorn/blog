@@ -25,3 +25,8 @@ mount -n -o remount,rw /
 ```shell
 passwd
 ```
+
+6. 启动到正常模式
+```shell
+exec /sbin/init
+```
