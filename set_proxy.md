@@ -57,5 +57,5 @@ https_proxy=127.0.0.1:7890
 	编辑$HOME/.pip/pip.conf,并加入如下代理
 ```shel
 [global]
-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+index-url = https://pypi.mirrors.ustc.edu.cn/simple
 ```

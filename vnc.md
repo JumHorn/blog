@@ -15,6 +15,7 @@ dnf install tigervnc-server
 ## 配置
 1. 添加vnc用户,设置密码
 ```shell
+vncpasswd
 vncserver
 ```
 2. 允许使用剪切板
@@ -60,3 +61,13 @@ vncserver -kill :*
 	远程桌面也是如此简单，其它应用只是在上面套了一层皮竟然还要收费，
 	为那些开源的人表示为由衷的敬意。
 	可想而知，知识付费的本质就是我知道你不知道
+
+# FAQ
+1. vncserver修改端口
+
+	其实vncserver是脚本，打开脚本文件直接修改即可
+```shell
+# 查找5900，直接修改
+$vncPort = 55900 + $displayNumber;
+my $rfb_port = 55900 + $n;
+```

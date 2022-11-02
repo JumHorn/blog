@@ -36,4 +36,19 @@ startxfce4
 
 	实际使用空间在300M，比gnome好很多了
 
-## XLDE
+## lxde
+1. 安装
+```shell
+pacman -S lxde
+```
+2. 启动
+
+	编辑$HOME/.vnc/xstartup
+```shell
+# /etc/X11/xinit/xinitrc
+exec startlxde
+```
+
+3. 测评
+
+	实际空间使用在150M左右，很好用的桌面环境，干净到啥也没有
