@@ -41,14 +41,24 @@ nslookup ip
 ## 修改主机sendmail.mc配置
 1. 安装工具
 ```shell
+# centos
 dnf install m4
 dnf install sendmail
 dnf install sendmail-cf
+
+# arch
+# 编译安装sendmail
+git clone https://aur.archlinux.org/sendmail.git
+cd sendmail
+makepkg -si
+# 额外安装
+pacman -S mailx
 ```
 
 2. 修改sendmail.mc配置
 
 	修改/etc/mail/sendmail.mc文件,修改对应位置文件
+	arch没有该文件，创建文件参考[wiki](https://wiki.archlinux.org/title/Sendmail)
 ```mc
 define(`SMART_HOST', `jumhorn.com')dnl
 DAEMON_OPTIONS(`Port=smtp,Addr=0.0.0.0, Name=MTA')dnl
@@ -62,18 +72,45 @@ TRUST_AUTH_MECH(`EXTERNAL DIGEST-MD5 CRAM-MD5 LOGIN PLAIN')dnl
 define(`confAUTH_MECHANISMS', `EXTERNAL GSSAPI DIGEST-MD5 CRAM-MD5 LOGIN PLAIN')dnl
 ```
 
-3. 重新生成sendmail.cf文件
+3. 修改local-host-name
+
+	编辑/etc/mail/local-host-names
+```file
+localhost
+your-domain.com
+```
+
+4. 重新生成sendmail.cf文件
 ```shell
 m4 /etc/mail/sendmail.mc  >  /etc/mail/sendmail.cf
 ```
 
-5. 修改host文件
+5. 修改access文件
+```config
+Connect:127.0.0.1 RELAY
+Connect:localhost RELAY
+Connect:hostname RELAY
+Connect:jumhorn.com RELAY
+```
+```shell
+#生成access.db
+makemap hash /etc/mail/access < /etc/mail/access
+```
+
+6. 修改virtusertable文件
+```config
+```
+```shell
+makemap hash /etc/mail/virtusertable < /etc/mail/virtusertable
+```
+
+7. 修改host文件
 ```ini
 # 执行命令 hostname即可得到本机host
 127.0.0.1 HOSTNAME jumhorn.com
 ```
 
-6. 重启sendmail服务
+8. 重启sendmail服务
 ```shell
 systemctl restart sendmail
 ```
@@ -157,4 +194,21 @@ admin@jumhorn.com
 * gui for read /var/mail(mbox file)
 ```shell
 dnf install evolution
+```
+
+* Currently no active mailbox
+
+1. 添加用户到mail组
+```shell
+# usermod -G [groupname] [username]
+usermod -G mail admin
+```
+
+2. procmail
+
+	对于arch用户，没有安装procmail配合sendmail使用，导致本地收不到邮件
+```shell
+git clone https://aur.archlinux.org/procmail.git
+cd procmail
+makepkg -si
 ```
