@@ -7,9 +7,15 @@
 	主要工具是Xvnc，在其上层的脚本有vncserver
 
 ```shell
+# CentOS
 # 安装桌面环境
-sudo dnf groupinstall "Server with GUI"
+dnf groupinstall "Server with GUI"
 dnf install tigervnc-server
+# Ubuntu
+apt install xserver-xorg-core
+apt install tigervnc-standalone-server tigervnc-xorg-extension
+# Arch
+pacman -S tigervnc
 ```
 
 ## 配置
@@ -17,6 +23,8 @@ dnf install tigervnc-server
 ```shell
 vncpasswd
 vncserver
+# ubuntu默认localhost无法从外网访问解决方法
+vncserver -localhost no
 ```
 2. 允许使用剪切板
 
@@ -34,6 +42,8 @@ autocutsel -fork
 /etc/X11/xinit/xinitrc
 # 启动Xfce
 startxfce4
+# 启动lxde
+startlxde
 # 启动gnome
 dbus-launch --exit-with-session gnome-session &
 ```
@@ -70,4 +80,12 @@ vncserver -kill :*
 # 查找5900，直接修改
 $vncPort = 55900 + $displayNumber;
 my $rfb_port = 55900 + $n;
+```
+
+2. 不支持公网IP访问
+
+	可以使用ssh端口映射，将远程端口映射到本地
+```shell
+# ssh -L localport:remoteip:remoteport user@host
+ssh 5901:127.0.0.1:5900 user@hostname
 ```
