@@ -50,7 +50,9 @@ ssh new@sdf.org
 
 ## [Cloudflare](https://www.cloudflare.com/)
 
-	cloudflare tunnel内网穿透
+	cloudflare tunnel内网穿透,有自己的域名，该域名可以直接用作内网服务
+	对于http，客户端不需要下载cloudflare
+	对于tcp，客户端和服务器都要下载cldouflare
 
 # 云建站
 
