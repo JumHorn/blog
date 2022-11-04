@@ -10,6 +10,10 @@
 	共享公网IP的NAT VPS，可以使用反向代理
 	[登录IPv6](https://ssh.hax.co.id/)
 
+## [intel](https://notebooks.edge.devcloud.intel.com/)
+
+	10小时使用时长，250G内存，CPU豪华级配置
+
 # 云shell
 	分享各种提供linux shell的云服务
 
@@ -79,12 +83,23 @@ ssh new@sdf.org
 # 云数据库
 
 ## MySQL Hosting
-> [Free MySQL Hosting](https://www.freemysqlhosting.net)
+1. [Free MySQL Hosting](https://www.freemysqlhosting.net)
 
-> [remote mysql](https://remotemysql.com/)
+	5M免费空间，支持phpMyAdmin
 
-> [Googie Host](https://googiehost.com/free-mysql-hosting.html)
+2. [planetscale](https://app.planetscale.com/)
+
+	需要加密连接,直接使用网页端连接,选择branch目前还点不进去
+	只能自己修改url
+
+> https://app.planetscale.com/jumhorn/daily/main/console
+
+3. [SQLPub](http://sqlpub.com)
+
+	免费500M空间
 
 ## Redis Hosting
 
-> [redis](https://redis.com/)
+1. [redis](https://redis.com/)
+
+	30M免费空间
