@@ -4,15 +4,20 @@
 
 	IBM教育免费服务器，支持免费用120天
 
+## [intel](https://notebooks.edge.devcloud.intel.com/)
+
+	jupter 10小时使用时长，250G内存，CPU豪华级配置
+	devcloud 16G 支持使用120天
+
 ## [woiden](https://woiden.id/)
 
 	云主机使用telegram注册，可以使用7天，可以持续续期.
 	共享公网IP的NAT VPS，可以使用反向代理
 	[登录IPv6](https://ssh.hax.co.id/)
 
-## [intel](https://notebooks.edge.devcloud.intel.com/)
+## [alwaysdata](https://www.alwaysdata.com)
 
-	10小时使用时长，250G内存，CPU豪华级配置
+	100M免费空间，可以使用ssh登录
 
 # 云shell
 	分享各种提供linux shell的云服务
