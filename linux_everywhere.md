@@ -76,6 +76,10 @@
 
 	免费站点都是广告，基本无法使用
 
+## [wid](https://www.wix.com)
+
+	同wordpress，只能写page
+
 ## [heroku](https://heroku.com)
 
 	可以将应用部署到该网站,2022.11.28收费
