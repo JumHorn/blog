@@ -30,26 +30,21 @@
 
 	有5G免费空间，但是不能一直运行
 
-## [github codespace](https://github.com/features/codespaces)
+## [replit](https://replit.com/)
 
-	目前不支持免费用户
+	执行程序，部署联网应用
+
+## [goormide](https://ide.goorm.io)
+
+	联网shell,10GB空间
 
 ## [github actions](github_action.md)
 
 	可以创建定时任务
 
-## [sdf.org](http://sdf.org/)
+## [blinder](https://mybinder.org/)
 
-	shell可以保存一年，可是免费用户不能联网
-```shell
-# begin your journey
-ssh new@sdf.org
-```
-
-## [replit](https://replit.com/)
-
-	执行程序，部署联网应用
-
+	无需注册，直接launch github链接
 
 # 内网穿透
 ## [ngrok](https://ngrok.com/)
@@ -65,13 +60,9 @@ ssh new@sdf.org
 
 # 云建站
 
-## [heroku](https://heroku.com)
-
-	可以将应用部署到该网站
-
 ## [vercel](https://vercel.com)
 
-	可以从github导入网站
+	可以从github导入网站,支持各种js框架
 
 ## [x10hosting](https://x10hosting.com)
 
@@ -79,11 +70,15 @@ ssh new@sdf.org
 
 ## [netlify](https://www.netlify.com)
 
-	还未测试
+	支持从git型导入网站，支持添加自定义域名
 
 ## [wordpress](https://wordpress.com)
 
 	免费站点都是广告，基本无法使用
+
+## [heroku](https://heroku.com)
+
+	可以将应用部署到该网站,2022.11.28收费
 
 # 云数据库
 
