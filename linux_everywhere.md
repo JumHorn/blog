@@ -90,7 +90,7 @@
 
 # 云数据库
 
-## MySQL Hosting
+## MySQL
 1. [Free MySQL Hosting](https://www.freemysqlhosting.net)
 
 	5M免费空间，支持phpMyAdmin
@@ -106,7 +106,13 @@
 
 	免费500M空间
 
-## Redis Hosting
+## postgreSQL
+
+1. [ElephantSQL](https://www.elephantsql.com/)
+
+	20M免费空间
+
+## Redis
 
 1. [redis](https://redis.com/)
 
