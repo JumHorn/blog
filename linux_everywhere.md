@@ -19,7 +19,7 @@
 
 	100M免费空间，可以使用ssh登录
 
-# 云shell
+# cloud shell
 	分享各种提供linux shell的云服务
 
 ## [xshellz](https://www.xshellz.com)
