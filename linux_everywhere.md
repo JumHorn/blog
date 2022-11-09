@@ -28,7 +28,7 @@
 
 ## [google cloud shell](https://cloud.google.com/shell)
 
-	有5G免费空间，但是不能一直运行
+	有5G免费空间，可以用tmux一直保持运行,网页版本身就是tmux
 
 ## [replit](https://replit.com/)
 
