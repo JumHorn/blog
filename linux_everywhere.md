@@ -32,11 +32,15 @@
 
 ## [github codespaces](https://github.com/codespaces)
 
-	有8G内存,32G空间,写代码专用,微软良心企业
+	有8G内存,32G空间,写代码专用,30分钟无活动自动关闭
 
 ## [github actions](github_action.md)
 
 	可以创建定时任务
+
+## [gitpod](https://www.gitpod.io)
+
+	github codespaces替代网站
 
 ## [replit](https://replit.com/)
 
