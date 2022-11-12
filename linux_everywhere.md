@@ -41,6 +41,8 @@
 ## [red hat openshift](https://www.redhat.com)
 
 	30天免费试用,等待90天后可以再次使用
+	功能太多，目前找到sandbox ide也非常好用
+	https://developers.redhat.com/developer-sandbox
 
 ## [gitpod](https://www.gitpod.io)
 
