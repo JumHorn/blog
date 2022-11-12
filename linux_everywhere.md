@@ -28,7 +28,7 @@
 
 ## [google cloud shell](https://cloud.google.com/shell)
 
-	有5G免费空间，可以用tmux一直保持运行,网页版本身就是tmux
+	有5G免费空间，可以用tmux一直保持运行,网页版本身就是tmux,每周50小时限制
 
 ## [github codespaces](https://github.com/codespaces)
 
