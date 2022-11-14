@@ -43,6 +43,8 @@
 	30天免费试用,等待90天后可以再次使用
 	功能太多，目前找到sandbox ide也非常好用
 	https://developers.redhat.com/developer-sandbox
+    sandbox中的oc(openshift client)命令本质是kubernetes
+    用来练习和使用kubernetes也是绝好的,有30G内存
 
 ## [gitpod](https://www.gitpod.io)
 
