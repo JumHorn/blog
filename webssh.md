@@ -13,8 +13,8 @@ pip3 install webssh
 	使用nginx反向代理
 ```conf
 server {
-    listen 80;
-    server_name shell.jumhorn.eu.org;
+	listen 80;
+	server_name shell.jumhorn.eu.org;
 
 	location / {
 		proxy_pass  http://127.0.0.1:8888;
@@ -25,11 +25,21 @@ server {
 		proxy_set_header Host $http_host;
 		proxy_set_header X-Real-IP $remote_addr;
 		proxy_set_header X-Real-PORT $remote_port;
-    }
+	}
 }
 ```
 
 ## 使用
 ```shell
 wssh --fbidhttp=False --xsrf=False --origin="*" --debug --xheaders=False
+```
+
+## 相关应用
+* [gotty](https://github.com/yudai/gotty)
+```shell
+gotty bash
+```
+* [ttyd](https://github.com/tsl0922/ttyd)
+```shell
+ttyd bash
 ```
