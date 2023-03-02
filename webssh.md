@@ -31,7 +31,7 @@ server {
 
 ## 使用
 ```shell
-wssh --fbidhttp=False --xsrf=False --origin="*" --debug --xheaders=False
+wssh --fbidhttp=False --xsrf=False --origin="*" --debug --xheaders=False --address="localhost"
 ```
 
 ## 相关应用
