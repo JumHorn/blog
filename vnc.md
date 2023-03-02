@@ -21,8 +21,10 @@ pacman -S tigervnc
 ## 配置
 1. 添加vnc用户,设置密码
 ```shell
+# 设置密码
 vncpasswd
-vncserver
+# 启动vnc服务
+vncserver  # vncserver :0(set display to :0)
 # ubuntu默认localhost无法从外网访问解决方法
 vncserver -localhost no
 ```
@@ -87,5 +89,5 @@ my $rfb_port = 55900 + $n;
 	可以使用ssh端口映射，将远程端口映射到本地
 ```shell
 # ssh -L localport:remoteip:remoteport user@host
-ssh 5901:127.0.0.1:5900 user@hostname
+ssh -L 5901:127.0.0.1:5900 user@hostname
 ```
