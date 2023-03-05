@@ -74,6 +74,13 @@ vncserver -kill :*
 	为那些开源的人表示为由衷的敬意。
 	可想而知，知识付费的本质就是我知道你不知道
 
+## 扩展
+
+1. VNC client web application
+
+	vnc协议的使用需要同时配置客户端和服务端,如果转为http协议就可以使用浏览器
+	[novnc](https://github.com/novnc/noVNC)项目出现了
+
 # FAQ
 1. vncserver修改端口
 
