@@ -1,4 +1,4 @@
-# 云主机
+# cloud server
 
 ## [IBM LinuxONE](https://linuxone.cloud.marist.edu)
 
@@ -46,13 +46,16 @@
     sandbox中的oc(openshift client)命令本质是kubernetes
     用来练习和使用kubernetes也是绝好的,有30G内存
 
-## [gitpod](https://www.gitpod.io)
-
-	github codespaces替代网站
-
 ## [replit](https://replit.com/)
 
 	执行程序，部署联网应用
+
+# online IDE
+	在线编辑器往往都提供直接的编译运行环境，都是可以直接拿到shell
+
+## [gitpod](https://www.gitpod.io)
+
+	github codespaces替代网站
 
 ## [goormide](https://ide.goorm.io)
 
@@ -66,7 +69,50 @@
 
 	1000 hours/month,6G内存
 
+## [Theia](https://theia-ide.org/)
+
+	eclipse che编辑器直接使用vscode插件
+
+## [cloud studio](https://cloudstudio.net/)
+
+	来自腾讯
+
+# web hosting
+
+	可以通过建站站点权限漏洞获取系统shell
+
+## php建站系统漏洞获取
+
+	[phpshell](webshells_php.md)
+## nodejs，python建站系统漏洞获取
+
+	可以直接部署wetty,webssh网页即可完成
+
+## 可以测试的网站
+
+	[web hosting](webhosting.md)
+
+# others
+
+	其他能获取shell的服务
+
+## (OnWorks)[https://www.onworks.net/]
+
+	提供linux图形化机器，直接使用
+
+## (Play with Docker)[https://labs.play-with-docker.com/]
+
+	4小时使用时间，可以部署docker容器
+
+## (AppOnFly)[https://www.apponfly.com/]
+
+	20分钟windows使用时间
+
 # 内网穿透
+
+	以上拿到shell的机器，通常不具备公网IP,使用内网穿透服务
+	可以很好的规避这个问题
+
 ## [ngrok](https://ngrok.com/)
 
 	提供域名，将内网应用部署到外网
@@ -77,65 +123,3 @@
 	cloudflare tunnel内网穿透,有自己的域名，该域名可以直接用作内网服务
 	对于http，客户端不需要下载cloudflare
 	对于tcp，客户端和服务器都要下载cldouflare
-
-# 云建站
-
-## [vercel](https://vercel.com)
-
-	可以从github导入网站,支持各种js框架
-
-## [x10hosting](https://x10hosting.com)
-
-	免费部署网站，提供mysql数据库
-
-## [netlify](https://www.netlify.com)
-
-	支持从git型导入网站，支持添加自定义域名
-
-## [wordpress](https://wordpress.com)
-
-	免费站点都是广告，基本无法使用
-
-## [wid](https://www.wix.com)
-
-	同wordpress，只能写page
-
-## [heroku](https://heroku.com)
-
-	可以将应用部署到该网站,2022.11.28收费
-
-# 云数据库
-
-## MySQL
-1. [planetscale](https://app.planetscale.com/)
-
-	需要加密连接,直接使用网页端连接,选择branch目前还点不进去
-	只能自己修改url
-
-> https://app.planetscale.com/jumhorn/daily/main/console
-
-2. [SQLPub](http://sqlpub.com)
-
-	免费500M空间
-
-3. [Free MySQL Hosting](https://www.freemysqlhosting.net)
-
-	5M免费空间，支持phpMyAdmin
-
-## postgreSQL
-
-1. [ElephantSQL](https://www.elephantsql.com/)
-
-	20M免费空间
-
-## Redis
-
-1. [Redis](https://redis.com/)
-
-	30M免费空间
-
-## MongoDB
-
-1. [MongoDB](https://www.mongodb.com/)
-
-	512MB to 5GB of storage
