@@ -30,13 +30,17 @@
 	当然使用php技术的站点，都可以尝试取系统权限
 参考[phpshell](webshells_php.md)
 
+## [x10hosting](https://x10hosting.com)
+
+	部署php网站，提供mysql数据库，可以搭建Discuz
+
+## [InfinityFree](https://app.infinityfree.net/)
+
+	部署php网站，提供mysql数据库，可以搭建Discuz
+
 ## [wordpress](https://wordpress.com)
 
 	免费站点都是广告，基本无法使用
-
-## [x10hosting](https://x10hosting.com)
-
-	免费部署网站，提供mysql数据库
 
 ## [wid](https://www.wix.com)
 
