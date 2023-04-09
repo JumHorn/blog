@@ -1,6 +1,7 @@
 # p2p
 
     对于两台公网机器p2p十分容易实现，如今内网都会经过nat，解决用UDP实现p2p
+    用工具或代码实现
 
 ## 工具
 ## 配置
@@ -23,3 +24,8 @@ nc 127.0.0.1 1234 # client
 ```shell
 echo "malicious" | sudo hping3 -c 1 -p client_port -s 1234 -A 127.0.0.1
 ```
+
+## tcp劫持
+## tcp重建
+## DNS欺诈
+## 创建自定义DNS服务器
