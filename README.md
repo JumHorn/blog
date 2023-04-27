@@ -1,3 +1,6 @@
+# important
+
+    This Repo move to https://github.com/JumHorn/jumhorn.github.io
 # This Repo
 
     用HEXO将我用markdown写的文档变成博客
@@ -13,6 +16,10 @@ git clone https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
 hexo clean && hexo g
 hexo server # hexo server -p 54001 --ip 127.0.0.1(自定义端口和IP)
 ```
+
+# 部署到github
+
+> https://hexo.io/docs/github-pages.html
 
 ## FAQ
 
