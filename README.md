@@ -1,24 +1,10 @@
-# blog
-just for fun
+# This Repo
 
-# ideas
+    用HEXO将我用markdown写的文档变成博客
+    
+## FAQ
 
-- [ ] 安装和使用anbox
+1. 为什么创建blog，而不是直接使用jumhorn.github.io
 
-- [x] 在centos上搭建vpn
-
-- [x] 多台公网服务器组建局域网
-
-	使用vpn
-
-- [ ] 建立查找开放端口的对应IP服务
-
-- [ ] 暴力破解wifi密码
-
-- [x] mysql命令行登录的密码加密了吗
-
-	如果截获报文是可以看到客户端和服务器的机器类型的
-
-- [x] 搭建邮箱服务器
-
-	创建邮件列表相当于一个公用邮箱的转发和群发
+    我不喜欢直接写html，都是写markdown后生成html，虽然hexo可以部署到github pages
+    但是会丢失我的提交记录，所以另开一个Repo来写博客
